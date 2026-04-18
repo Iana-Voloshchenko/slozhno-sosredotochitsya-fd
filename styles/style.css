@@ -1,5 +1,191 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
+  font-family: var(--base-font-family), sans-serif;
+  font-size: var(--base-font-size);
+  line-height: var(--base-line-height);
+  background-color: var(--bg-color);
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  background-image: var(--bg-image);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.decorated-zone {
+  position: relative;
+}
+
+.decorated-zone::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+}
+
+.decorated-zone::after {
+  content: '';
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
+}
+
+.title {
+  color: var(--title-text-color);
+  font-size: var(--title-font-size);
+  line-height: var(--title-line-height);
+}
+
+.title-decor {
+  color: var(--h3-text-color);
+  background-color: var(--accent-color);
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr min-content 1fr;
+  padding: var(--space-page);
+  block-size: 100vh;
+  min-block-size: 668px;
+}
+
+.header__rec-indicator {
+  position: absolute;
+  top: 10px;
+  right: 38px;
+  color: var(--accent-color);
+  line-height: 1.39;
+}
+
+.header__rec-indicator::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -19px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 4px 2px var(--accent-color);
+  background-color: var(--accent-color);
+  transform: translateY(-50%);
+}
+
+.header__theme-menu {
+  justify-self: end;
+  align-self: center;
+}
+
+.header__theme-menu-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.header__theme-menu-button {
+  border: none;
+  padding: 3px 13px;
+  color: var(--button-text-color);
+  line-height: var(--button-line-height);
+  text-transform: lowercase;
+  background-color: transparent;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--accent-color);
+}
+
+.header__title {
+  justify-self: start;
+  align-self: center;
+  text-shadow: 4px 4px 0 var(--accent-color);
+}
+
+.header__text {
+  justify-self: end;
+  align-self: center;
+  font-weight: 700;
+  inline-size: 355px;
+}
+
+.main {
+  display: grid;
+  gap: var(--space-section);
+  margin-block: var(--space-block);
+  padding-inline: var(--space-page);
+}
+
+.section {
+  display: grid;
+}
+
+.section__title {
+  margin-bottom: var(--h2-margin);
+  color: var(--h2-text-color);
+  font-size: var(--h2-font-size);
+}
+
+.section__subtitle {
+  margin-bottom: var(--h3-subtitle-margin);
+  font-size: var(--h3-font-size);
+}
+
+.section__list {
+  display: grid;
+  gap: var(--space-item);
+}
+
+.card__title {
+  margin-bottom: var(--h3-margin);
+  font-size: var(--h3-font-size);
+}
+
+.card__title--thin {
+  font-weight: 400;
+}
+
+.card__text {
+  color: var(--text-color);
+}
+
+.card__link {
+  text-decoration: none;
+  text-shadow: 2px 2px 0 var(--accent-color);
+}
+
+.gallery__title {
+  margin-bottom: var(--gallery-title-margin);
+  font-size: var(--gallery-title-size);
+}
+
+.gallery__list {
+  display: grid;
+  gap: var(--space-gallery-item);
+}
+
+.gallery__image {
+  display: block;
+  object-fit: cover;
+  inline-size: 100%;
+}
+
+.footer {
+  display: grid;
+  padding: var(--space-page);
+  background-color: var(--bg-color);
+  block-size: 100vh;
+  min-block-size: 668px;
+}
+
+.footer__title {
+  place-self: center;
+  text-shadow: 2px 2px 0 var(--accent-color);
 }
