@@ -32,3 +32,14 @@
   --h3-subtitle-margin: 20px;
   --gallery-title-margin: 10px;
 }
+
+@media (min-width: 768px) {
+  :root {
+    --title-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    --space-page: 20px;
+    --space-block: 60px;
+    --space-section: 80px;
+    --space-gallery-item: 20px;
+    --gallery-title-margin: 20px;
+  }
+}
