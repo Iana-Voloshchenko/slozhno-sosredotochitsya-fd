@@ -14,6 +14,7 @@
   --accent-color: #FF8DCB;
   --text-color: #353430;
   --button-text-color: #353430;
+  --button-hover-color: rgba(50, 49, 45, 0.4);
   --title-text-color: #FFC2E6;
   --h2-text-color: #353430;
   --h3-text-color: #353430;
@@ -30,6 +31,7 @@
     --accent-color: #FF8DCB;
     --text-color: #353430;
     --button-text-color: #353430;
+    --button-hover-color: rgba(50, 49, 45, 0.4);
     --title-text-color: #FFC2E6;
     --h2-text-color: #353430;
     --h3-text-color: #353430;
