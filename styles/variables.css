@@ -6,6 +6,7 @@
   --bg-image: url("../images/cover-image-dark.png");
   --bg-color: #000028;
   --accent-color: #FF0070;
+  --decor-color: #FF0070;
   --text-color: #F1B2CE;
   --button-text-color: #FF0070;
   --button-hover-color: rgba(255, 0, 112, 0.4);
@@ -29,7 +30,6 @@
   --space-item: 20px;
   --space-gallery-item: 10px;
   --h2-margin: 20px;
-  --h3-margin: 10px;
   --h3-subtitle-margin: 20px;
   --gallery-title-margin: 10px;
 }
